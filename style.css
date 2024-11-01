@@ -30,7 +30,6 @@ body {
 
 /*Stili per l'impostazione dei contatti*/
 .contatti {
-    text-align: center;
     text-emphasis-color: revert;
     color: #fff;
     background: rgba(0, 0, 0, 0.7);
@@ -53,116 +52,19 @@ body {
     filter: brightness(0) invert(1);
     margin-right: 4px;
 }
-/*stile contenitore 2 box*/
-.Contenitore2box {
-    align-content: center;
-    justify-content: center;
-}
 
-/*stili per l'impostazione del contenitore: "su di me"*/
-.suDiMe {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-}
-
-/*stili per l'impostazione del contenitore: "formazione"*/
-.formazione {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 2dvh;
-}
-
-/*stili per l'imopostazione del contenitore: "alcuni dei miei lavori"*/
-.iMieiLavori {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-flow: column;
-    font-size: 20px;
-    border-radius: 10px;
-    /* margin: 20px;
-    padding: 50px; */
-}
-
-.iMieiLavori a {
-    color: white;
-    background-color: rgb(57, 10, 151);
-    border-radius: 40px;
-    padding: 20px;
-    margin: 10px;
-}
-
-/* Stile per il contenitore: "settore informatico" e "settore architettonico" */
-.settoreInformatico,
-.settoreArchitettonico {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    width: 80%;
-}
-
-.settoreInformatico li {
-    text-align: left;
-}
-
-/* Media Query per la gestione degli schermi più piccoli */
-@media (max-width: 768px) {
-    .settoreInformatico,
-    .settoreArchitettonico {
-        width: 100%; /* Le sezioni occupano il 100% della larghezza */
-        margin-bottom: 10px; /* Margine inferiore per separare le sezioni */
-    }
-
-    .iMieiLavori {
-        flex-direction: column; /* Riorganizza in colonna su schermi più piccoli */
-        padding: 10px; /* Riduce il padding */
-    }
-}
-
-/* Stile galleria */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fill,
-        minmax(150px, 1fr)
-    ); /* Griglia responsiva */
-    gap: 10px; /* Spaziatura tra le immagini */
-    padding: 10px; /* Padding del contenitore */
-}
-
-.gallery img {
-    width: 100%; /* Le immagini occupano il 100% della cella */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
-    border-radius: 8px; /* Angoli arrotondati */
-    transition: transform 0.3s; /* Effetto di transizione */
-}
-
-.gallery img:hover {
-    transform: scale(2); /* Ingrandisce l'immagine al passaggio del mouse */
+.iconeETesti p {
+    margin: 0;
 }
 
 /*stile footer*/
 .footer {
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     text-align: center;
     color: #fff;
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
+    margin: 20px 0 0 0;
 }
