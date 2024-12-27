@@ -1,4 +1,11 @@
+import ReactGA from 'react-ga4';
+
 export default function Progetti() {
+    ReactGA.send({
+        hitType: 'pageview',
+        page: '/progetti',
+        title: 'Projects'
+    });
     return (
         <div className="bg-gray-50 py-16">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">

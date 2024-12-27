@@ -1,7 +1,14 @@
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
+import ReactGA from 'react-ga4';
 
 export default function App() {
+    ReactGA.send({
+        hitType: 'pageview',
+        page: '/',
+        title: 'Homepage'
+    });
+
     const links = [
         {
             name: 'LinkedIn',
@@ -66,7 +73,7 @@ export default function App() {
                                 href={link.href}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="flex items-center text-lg"
+                                className="flex items-center text-lg hover:scale-110 transition-transform duration-200"
                             >
                                 {link.icon}
                                 <span className="ml-2">{link.name}</span>
