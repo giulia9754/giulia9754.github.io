@@ -7,7 +7,9 @@ import { HashRouter, Routes, Route } from 'react-router';
 import Progetti from './components/Progetti';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ReactGA from 'react-ga4';
 
+ReactGA.initialize('G-11H29VWG9Y');
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
