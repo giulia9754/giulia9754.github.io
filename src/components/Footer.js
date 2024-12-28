@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div>
             <footer class=" rounded-lg m-4 dark:bg-gray-800">
-                <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between">
                     <span
                         style={{
                             display: 'flex',
@@ -18,7 +18,7 @@ function Footer() {
                             href="https://www.linkedin.com/in/giulia-bangrazi/"
                             target="_blank"
                             rel="noreferrer"
-                            className="mr-2"
+                            className="mr-4"
                         >
                             <FaLinkedin style={{ fontSize: '18px' }} />
                         </a>
@@ -26,6 +26,7 @@ function Footer() {
                             href="https://github.com/giulia9754"
                             target="_blank"
                             rel="noreferrer"
+                            className="mr-4"
                         >
                             <FaGithub style={{ fontSize: '18px' }} />
                         </a>
