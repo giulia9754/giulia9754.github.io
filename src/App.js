@@ -27,11 +27,20 @@ export default function App() {
     ];
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 min-h-[80vh]">
-            <img
+            {/* <img
                 alt=""
                 src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&blend-mode=multiply"
                 className="absolute inset-0 -z-10 size-full object-cover filter brightness-50"
-            />
+            /> */}
+            <video
+                autoPlay
+                loop
+                muted
+                className="absolute inset-0 -z-10 size-full object-cover filter brightness-50"
+            >
+                <source src="background.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <div
                 aria-hidden="true"
                 className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
