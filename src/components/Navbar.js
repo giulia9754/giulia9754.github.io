@@ -53,7 +53,7 @@ export default function Navbar() {
                                     Projects
                                 </Link>
                                 <a
-                                    href="https://flowcv.com/resume/ig1mas518u"
+                                    href="/Giulia-Bangrazi-Resume.pdf"
                                     target="_blank"
                                     rel="noreferrer"
                                     className={classNames(
@@ -126,10 +126,10 @@ export default function Navbar() {
             <DisclosurePanel className="sm:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                     <DisclosureButton
-                        key="flowcv"
+                        key="resume"
                         as="a"
                         target="_blank"
-                        href="https://flowcv.com/resume/ig1mas518u"
+                        href="/Giulia-Bangrazi-Resume.pdf"
                         className={
                             'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
                         }
